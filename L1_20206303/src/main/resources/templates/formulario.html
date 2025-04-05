@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Realizar pedido</title>
+    </head>
+    <body>
+
+        <form action="/ordenar/formulario" method="post">
+            <ul>
+                <li>
+                    <label for="name">Nombre del cliente:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="numeroMesa">Numero de mesa:</label>
+                    <input type="numero" id="numeroMesa" name="numero" />
+                </li>
+                <li>
+                    <h3>Productos:</h3>
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox" /> Cafe</label
+
+                    ><br />
+                    <input type="checkbox" id="cbox2" value="second_checkbox" />
+                    <label for="cbox2">Te</label>
+                    <input type="checkbox" id="cbox3" value="tres_checkbox" />
+                    <label for="cbox3">Postre</label>
+                </li>
+
+                <li>
+                    <h3>Personalizacion:</h3>
+
+                    <label for="tamanio">Tamaño:</label>
+
+                    <select name="tamanio" id="tamanio">
+                        <option value="pequenio">pequenio</option>
+                        <option value="mediano">mediano</option>
+                        <option value="grande">grande</option>
+                    </select>
+
+                </li>
+
+                <li>
+                    <h3>Cantidad:</h3>
+                    <input type="text" name="cantidad">
+                </li>
+
+                <li>
+                    <h3>Opciones adicionales:</h3>
+                    <label><input type="checkbox" id="adicional" value="first_checkbox" /> Cafe</label
+
+                    ><br />
+                    <input type="checkbox" id="adicional2" value="second_checkbox" />
+                    <label for="adicional2">Leche vegetal</label>
+                    <input type="checkbox" id="adicional3" value="tres_checkbox" />
+                    <label for="adicional3">Sin azucar</label>
+                </li>
+            </ul>
+
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resumen de pedido</title>
+    </head>
+    <body>
+
+
+        <h1>Resumen de pedid</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Cliente</th>
+                    <th>Mesa</th>
+                    <th>Cantidad</th>
+                    <th>Adicionales</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each=" : ${}">
+                    <td th:text="${nombre}"></td>
+                    <td th:text="${mesa}"></td>
+                    <td th:text="${cantidad}"></td>
+                    <td th:text="${adicional}"></td>
+                    <td th:text="${total}"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit">Calificar mi experiencia</button>
+
+
+    </body>
+</html>
